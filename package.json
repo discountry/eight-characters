@@ -1,0 +1,38 @@
+{
+  "name": "eight-characters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/discountry/eight-characters.git"
+  },
+  "private": false,
+  "version": "0.2.0",
+  "type": "module",
+  "main": "./dist/eight-characters.umd.cjs",
+  "module": "./dist/eight-characters.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/eight-characters.js",
+      "require": "./dist/eight-characters.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3",
+    "vitest": "^0.34.6"
+  }
+}
